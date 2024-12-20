@@ -13,7 +13,7 @@
  # limitations under the License.
 
 specVersion: "v1alpha"
-serviceId: "your-service-id"
+serviceId: "dm-1"
 location: "us-central1"
 schema:
   source: "./schema"
@@ -21,5 +21,5 @@ schema:
     postgresql:
       database: "your-database"
       cloudSql:
-        instanceId: "your-instance-id"
+        instanceId: "dm-codelab"
 connectorDirs: ["./movie-connector"]

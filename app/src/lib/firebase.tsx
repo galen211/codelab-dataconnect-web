@@ -23,14 +23,22 @@ import {
 import { connectorConfig } from '@movie/dataconnect';
 import { createContext } from "react";
 
+// Import the functions you need from the SDKs you need
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "API_KEY",
-  authDomain: "PROJECT_ID.firebaseapp.com",
-  projectId: "PROJECT_ID",
-  storageBucket: "PROJECT_ID.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
+  apiKey: "AIzaSyBMMP-732UXpLnmJsbDTMJnLic_rfkt-JQ",
+  authDomain: "dm-codelab.firebaseapp.com",
+  projectId: "dm-codelab",
+  storageBucket: "dm-codelab.firebasestorage.app",
+  messagingSenderId: "124252887420",
+  appId: "1:124252887420:web:d0c72ddd0661eb49a76cf9"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 const firebaseApp =
   getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
